@@ -1,0 +1,10 @@
+<h1>Little Tour of Heroes</h1>
+
+<input #inputHero (keydown.enter)="addHero(inputHero.value);inputHero.value=''"/> 
+<button (click)="addHero(inputHero.value);inputHero.value=''">Add</button>
+
+<ul>
+  <li *ngFor="let hero of heroes">
+    {{ hero }}
+  </li>
+</ul>
